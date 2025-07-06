@@ -1,5 +1,5 @@
 // @ts-check
-import { test } from '@playwright/test';
+import { expect, test } from '@playwright/test';
 const { faker } = require('@faker-js/faker')
 
 const { LandingPage } = require('../pages/LandingPage')
@@ -14,7 +14,6 @@ test.beforeEach(async ({ page }) => {
 })
 
 test('Deve cadastrar um lead na fila de espera', async ({ page }) => {
-
   const leadName = faker.person.fullName()
   const leadEmail = faker.internet.email()
 
@@ -43,6 +42,27 @@ test('Deve cadastrar um lead na fila de espera', async ({ page }) => {
 
 
   // await page.waitForTimeout(5000)
+});
+
+test('Não deve cadastrar o mesmo email', async ({ page, request }) => {
+  const leadName = faker.person.fullName()
+  const leadEmail = faker.internet.email()
+  
+  const newLead = await request.post('http://localhost:3333/leads', {
+    data: {
+      name: leadName,
+      email: leadEmail
+    }
+  })
+
+  expect(newLead.ok).toBeTruthy()
+
+  await landingPage.visit()
+  await landingPage.openLeadModal()
+  await landingPage.submitLeadForm(leadName, leadEmail)
+
+  const message = 'O endereço de e-mail fornecido já está registrado em nossa fila de espera.'
+  await toast.containText(message)
 });
 
 

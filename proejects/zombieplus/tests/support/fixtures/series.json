@@ -8,22 +8,22 @@
     "cover": "tests/support/fixtures/covers/series/The_Haunting_of_Hill_House_poster.jpg",
     "seasons": 1
   },
-  "Midnight Mass": {
+  "duplicate": {
     "title": "Midnight Mass",
     "overview": "Uma comunidade isolada começa a testemunhar eventos milagrosos após a chegada de um padre misterioso.",
     "company": "Netflix",
     "release_year": 2021,
     "featured": true,
-    "cover": "https://example.com/midnight_mass.jpg",
+    "cover": "tests/support/fixtures/covers/series/Midnight_Mass_Poster.jpg",
     "seasons": 1
   },
-  "American Horror Story": {
+  "to_remove": {
     "title": "American Horror Story",
     "overview": "Cada temporada conta uma história de terror diferente, com temas variados como bruxas, fantasmas e assassinos.",
-    "company": "FX",
+    "company": "Fox Entertainment",
     "release_year": 2011,
     "featured": true,
-    "cover": "https://example.com/ahs.jpg",
+    "cover": "tests/support/fixtures/covers/series/American_Horror_Story.jpg",
     "seasons": 12
   },
   "The Fall of the House of Usher": {

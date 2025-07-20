@@ -60,6 +60,7 @@ export class Api {
     }
 
     async postSerie(serie){
+        console.log(serie.company)
         const companyId = await this.getCompanyIdByName(serie.company)
 
         const response = await this.request.post('http://localhost:3333/tvshows', {

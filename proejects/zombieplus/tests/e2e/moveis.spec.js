@@ -59,7 +59,6 @@ test('Deve realizar busca pelo termo Zumbi', async ({ page, request }) => {
 
     movies.data.forEach(async (m) => {
         await request.api.postMovie(m)
-
     })
 
     await page.login.do('admin@zombieplus.com', 'pwd123', 'Admin')

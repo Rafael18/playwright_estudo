@@ -1,3 +1,5 @@
+const { expect } = require('@playwright/test')
+
 export class Series {
     constructor(page) {
         this.page = page
@@ -52,7 +54,23 @@ export class Series {
 
         await this.submit()
     }
-    
+
+    async tableHave(content) {
+        const rows = this.page.getByRole('row')
+        await expect(rows).toContainText(content)
+    }
+
+    async search(target) {
+        await this.page.getByPlaceholder('Busque pelo nome')
+            .fill(target)
+
+        await this.page.click('.actions button')
+    }
+
+    async alertHaveText(target) {
+        await expect(this.page.locator('.alert')).toHaveText(target)
+    }
+
     async remove(title) {
         await this.page.getByRole('row', { name: title })
             .getByRole('button')

@@ -1,0 +1,92 @@
+{
+  "create": {
+    "title": "The Haunting of Hill House",
+    "overview": "Uma família confronta memórias assustadoras de sua antiga casa assombrada.",
+    "company": "Netflix",
+    "release_year": 2018,
+    "featured": true,
+    "cover": "tests/support/fixtures/covers/series/The_Haunting_of_Hill_House_poster.jpg",
+    "seasons": 1
+  },
+  "Midnight Mass": {
+    "title": "Midnight Mass",
+    "overview": "Uma comunidade isolada começa a testemunhar eventos milagrosos após a chegada de um padre misterioso.",
+    "company": "Netflix",
+    "release_year": 2021,
+    "featured": true,
+    "cover": "https://example.com/midnight_mass.jpg",
+    "seasons": 1
+  },
+  "American Horror Story": {
+    "title": "American Horror Story",
+    "overview": "Cada temporada conta uma história de terror diferente, com temas variados como bruxas, fantasmas e assassinos.",
+    "company": "FX",
+    "release_year": 2011,
+    "featured": true,
+    "cover": "https://example.com/ahs.jpg",
+    "seasons": 12
+  },
+  "The Fall of the House of Usher": {
+    "title": "The Fall of the House of Usher",
+    "overview": "Herdeiros de uma dinastia poderosa começam a morrer misteriosamente.",
+    "company": "Netflix",
+    "release_year": 2023,
+    "featured": false,
+    "cover": "https://example.com/usher.jpg",
+    "seasons": 1
+  },
+  "From": {
+    "title": "From",
+    "overview": "Pessoas presas em uma cidade sinistra enfrentam terrores noturnos.",
+    "company": "MGM+",
+    "release_year": 2022,
+    "featured": true,
+    "cover": "https://example.com/from.jpg",
+    "seasons": 2
+  },
+  "Chucky": {
+    "title": "Chucky",
+    "overview": "O famoso boneco assassino volta a causar terror em uma pequena cidade.",
+    "company": "Syfy",
+    "release_year": 2021,
+    "featured": false,
+    "cover": "https://example.com/chucky.jpg",
+    "seasons": 3
+  },
+  "The Walking Dead": {
+    "title": "The Walking Dead",
+    "overview": "Um grupo de sobreviventes tenta se manter vivo em um mundo dominado por zumbis.",
+    "company": "AMC",
+    "release_year": 2010,
+    "featured": false,
+    "cover": "https://example.com/walking_dead.jpg",
+    "seasons": 11
+  },
+  "Yellowjackets": {
+    "title": "Yellowjackets",
+    "overview": "Um time de futebol feminino sobrevive a um acidente de avião e enfrenta horrores na floresta.",
+    "company": "Showtime",
+    "release_year": 2021,
+    "featured": true,
+    "cover": "https://example.com/yellowjackets.jpg",
+    "seasons": 2
+  },
+  "Hannibal": {
+    "title": "Hannibal",
+    "overview": "A complexa relação entre o psiquiatra Hannibal Lecter e um investigador do FBI.",
+    "company": "NBC",
+    "release_year": 2013,
+    "featured": false,
+    "cover": "https://example.com/hannibal.jpg",
+    "seasons": 3
+  },
+  "Penny Dreadful": {
+    "title": "Penny Dreadful",
+    "overview": "Personagens clássicos do horror se encontram em uma narrativa sombria e gótica.",
+    "company": "Showtime",
+    "release_year": 2014,
+    "featured": false,
+    "cover": "https://example.com/penny_dreadful.jpg",
+    "seasons": 3
+  }
+}

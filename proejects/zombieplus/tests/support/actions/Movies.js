@@ -7,7 +7,7 @@ export class Movies {
     }
 
     async goForm() {
-        // ^: inicia com; $: termina com; *: contem
+        // ^ -> inicia com; $ -> termina com; * -> contem
         await this.page.locator('a[href$="register"]').click()
     }
 
